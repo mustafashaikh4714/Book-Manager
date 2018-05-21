@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon May 21 19:06:20 IST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0163-82ea-3b79-0000014b2150 
+on database directory /home/mustafa/Desktop/BookManager/null/database with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/home/mustafa/Desktop/BookManager/dist/run1688145538/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-b11
+user.dir=/home/mustafa/Desktop/BookManager
+os.name=Linux
+os.arch=amd64
+os.version=4.4.0-31-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

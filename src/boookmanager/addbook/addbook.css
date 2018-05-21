@@ -1,0 +1,11 @@
+
+/* 
+    Created on : 29 Dec, 2017, 10:10:16 AM
+    Author     : mustafa
+*/
+
+.jfx-button:hover {
+     -fx-background-color: green;
+     -fx-text-fill: black;
+    
+}

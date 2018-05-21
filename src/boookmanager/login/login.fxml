@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="526.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boookmanager.login.LoginController">
+   <children>
+      <ImageView fitHeight="590.0" fitWidth="463.0" layoutX="419.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bookmanager/main/Group_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="21.0" prefHeight="32.0" prefWidth="146.0" text="Login " textFill="#3f0b36">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="username" focusColor="#a82c78" labelFloat="true" layoutX="74.0" layoutY="143.0" prefHeight="32.0" prefWidth="280.0" promptText="Username" style="-fx-background-radius: 20;" unFocusColor="#b565a3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="loginButton" layoutX="86.0" layoutY="312.0" onAction="#loginButtonClicked" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #a82c78; -fx-border-radius: 22; -fx-background-radius: 22;" text="Login" textFill="#e8e1e1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="531.0" layoutY="24.0" prefHeight="57.0" prefWidth="250.0" text="BookManager" textFill="#f2eeee">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="274.0" prefHeight="20.0" prefWidth="430.0" text="Experiance the new generation UI with Magnificiant " textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="302.0" prefHeight="20.0" prefWidth="395.0" text="new features that enhance your interest to read " textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="334.0" prefHeight="20.0" prefWidth="318.0" text="the books and keep your interest" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="526.0" layoutY="365.0" prefHeight="20.0" prefWidth="318.0" text="FEEL THE DIFFERENCE....." textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="password" focusColor="#a82c78" labelFloat="true" layoutX="74.0" layoutY="203.0" onAction="#loginButtonClicked" prefHeight="32.0" prefWidth="280.0" promptText="Password" unFocusColor="#b565a3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="238.0" layoutY="312.0" onAction="#cancelButtonClicked" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #a82c78; -fx-border-radius: 22; -fx-background-radius: 22;" text="Cancel" textFill="#e8e1e1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="21.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bookmanager/main/username.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="21.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bookmanager/main/passwordAsset%2017xhdpi.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="573.0" layoutY="84.0" mnemonicParsing="false" prefHeight="137.0" prefWidth="146.0" style="-fx-background-radius: 150; -fx-background-color: white;" textFill="#ebeaea" />
+      <ImageView fitHeight="85.0" fitWidth="108.0" layoutX="591.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bookmanager/main/1711708-logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

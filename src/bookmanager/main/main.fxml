@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="532.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookmanager.main.Main_Controller">
+   <children>
+      <Pane prefHeight="58.0" prefWidth="865.0" style="-fx-background-color: #a82c78;">
+         <children>
+            <Label layoutX="119.0" layoutY="12.0" prefHeight="34.0" prefWidth="190.0" text="BookManager" textFill="#3f0b36">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="bid" alignment="CENTER" focusColor="#a82c78" layoutX="185.0" layoutY="159.0" onAction="#laodBookInfo" prefHeight="32.0" prefWidth="206.0" promptText="Book ID" style="-fx-background-radius: 20;" unFocusColor="#b565a3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mid" alignment="CENTER" focusColor="#a82c78" layoutX="548.0" layoutY="160.0" onAction="#loadMemberInfo" prefHeight="32.0" prefWidth="206.0" promptText="Member ID" style="-fx-background-radius: 20;" unFocusColor="#b565a3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="417.0" layoutY="399.0" onAction="#loadIssueOperation" prefHeight="32.0" prefWidth="123.0" style="-fx-background-color: #a82c78; -fx-background-radius: 22;" text="Issue" textFill="#e8e1e1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <VBox layoutX="-1.0" layoutY="56.0" opacity="0.99" prefHeight="475.0" prefWidth="153.0" style="-fx-background-color: a82c78;">
+         <children>
+            <Pane layoutX="10.0" layoutY="218.0" opacity="0.61" prefHeight="472.0" prefWidth="153.0">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#loadAddMember" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: #3f0b36; -fx-border-color: white;" text="Add Member" textFill="#fbf6fc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="58.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@member.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutX="-1.0" layoutY="84.0" mnemonicParsing="false" onAction="#loadAddBook" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: #3f0b36; -fx-border-color: white;" text="Add Book" textFill="#fbf6fc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="35.0" layoutX="58.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@book.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutX="-1.0" layoutY="168.0" mnemonicParsing="false" onAction="#loadShowMember" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: #3f0b36; -fx-border-color: white;" text="Show Books" textFill="#fbf6fc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BOTTOM_CENTER" layoutY="252.0" mnemonicParsing="false" onAction="#loadShowBooks" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: #3f0b36; -fx-border-color: white;" text="Show Members" textFill="#fbf6fc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="35.0" fitWidth="42.0" layoutX="58.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@username.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="42.0" layoutX="58.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@books.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutY="336.0" mnemonicParsing="false" onAction="#loadSettings" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: #3f0b36; -fx-border-color: white;" text="Settings" textFill="#fbf6fc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="61.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@settings.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </VBox>
+      <Label layoutX="191.0" layoutY="70.0" prefHeight="42.0" prefWidth="142.0" text="Book Issue" textFill="#3f0b36" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" alignment="CENTER" layoutX="370.0" layoutY="438.0" prefHeight="32.0" prefWidth="238.0" textFill="#eb1c8e" />
+      <Text fx:id="bookName" layoutX="242.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" textAlignment="JUSTIFY">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="bAuthor" layoutX="260.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="JUSTIFY">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="bStatus" layoutX="262.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="JUSTIFY">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="mName" layoutX="605.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Name" textAlignment="JUSTIFY" wrappingWidth="131.5322265625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="mMobile" layoutX="613.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moblle" textAlignment="JUSTIFY" wrappingWidth="131.5322265625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label layoutX="320.0" layoutY="70.0" onMouseClicked="#loadRenew" prefHeight="42.0" prefWidth="142.0" text="Renew / Submit" textFill="#3f0b36" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

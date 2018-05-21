@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="487.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boookmanager.listmembers.ListmemberController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="57.0" prefWidth="872.0" style="-fx-background-color: #a82c78;">
+         <children>
+            <Label layoutX="68.0" layoutY="12.0" prefHeight="34.0" prefWidth="175.0" text="BookManager" textFill="#3f0b36">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="41.0" layoutY="61.0" prefHeight="42.0" prefWidth="175.0" text="View Members" textFill="#3f0b36">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="825.0" layoutY="64.0" onMouseClicked="#homeClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bookmanager/main/home.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="109.0" prefHeight="358.0" prefWidth="783.0">
+         <columns>
+            <TableColumn fx:id="idCol" maxWidth="160.0" prefWidth="114.0" text="Member ID" />
+            <TableColumn fx:id="nameCol" maxWidth="231.0" prefWidth="215.0" text="Name" />
+            <TableColumn fx:id="mobileCol" maxWidth="214.0" minWidth="0.0" prefWidth="176.0" text="Mobile" />
+            <TableColumn fx:id="emailCol" maxWidth="276.0" minWidth="0.0" prefWidth="273.0" text="Email" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#hadleMemberDelete" text="Delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#hadleMemberEdit" text="Update" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <TextField fx:id="search" alignment="CENTER" layoutX="355.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" onMouseReleased="#search" prefHeight="33.0" prefWidth="190.0" promptText="Search" style="-fx-border-color: #a82c78; -fx-border-radius: 20; -fx-border-width: 2; -fx-background-radius: 20;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="364.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bookmanager/main/search.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookmanger.settings.SettingsController">
+   <children>
+      <Pane layoutY="-3.0" prefHeight="57.0" prefWidth="607.0" style="-fx-background-color: #a82c78;">
+         <children>
+            <Label layoutX="43.0" layoutY="6.0" prefHeight="48.0" prefWidth="191.0" text="BookManager" textFill="#3f0b36">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="31.0" layoutY="80.0" prefHeight="42.0" prefWidth="142.0" text="Settings" textFill="#3f0b36">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nDaysWithoutFine" focusColor="#ea1ff5" labelFloat="true" layoutX="157.0" layoutY="103.0" prefHeight="34.0" prefWidth="366.0" promptText="No of days member can keep book without fine" unFocusColor="#c358af">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="finePerDay" focusColor="#ea1ff5" labelFloat="true" layoutX="161.0" layoutY="163.0" prefHeight="34.0" prefWidth="366.0" promptText="Fine per day" unFocusColor="#c358af">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="username" focusColor="#ea1ff5" labelFloat="true" layoutX="157.0" layoutY="227.0" prefHeight="34.0" prefWidth="366.0" promptText="Username" unFocusColor="#c358af">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="password" focusColor="#ea1ff5" labelFloat="true" layoutX="157.0" layoutY="294.0" prefHeight="34.0" prefWidth="366.0" promptText="Password" unFocusColor="#c358af">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="190.0" layoutY="354.0" onAction="#handleSaveButtonAction" prefHeight="42.0" prefWidth="93.0" style="-fx-background-color: #a82c78; -fx-background-radius: 15;" text="Save" textFill="#e8e1e1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="356.0" layoutY="354.0" onAction="#handleCancelButtonAction" prefHeight="42.0" prefWidth="93.0" style="-fx-background-color: #a82c78; -fx-background-radius: 15;" text="Cancel" textFill="#e8e1e1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
